@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js">
+    </script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#">Portiragnes Plage</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#description">DESCRIPTION</a></li>
+                    <li><a href="#photos">PHOTOS</a></li>
+                    <li><a href="#assets">AMENAGEMENTS</a></li>
+                    <li><a href="#reservation">RESERVATION</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron text-center">
+        <h1>RESIDENCE OMBRE ET LUMIERE</h1>
+        <p>6 couchages</p>
+        <!-- <p>Maison, 33 m²</p> -->
+        <!-- <p>Portiragnes plage</p> -->
+        <!-- <p>A partir de 342 € </p> -->
+    </header>
+    <!-- Description -->
+    <section id="description" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Description</h2>
+                <p>Situé dans une petite résidence sécurisée, une jolie villa vous attend. Elle comprend au rez-de-chaussée
+                    un séjour avec une nouvelle cuisine <strong>full</strong> équipée, une salle d'eau, wc. A l'étage vous
+                    avez 2 chambres avec un lit double dans chacune.</p>
+                <p>Le tout agrémenté d'une belle terrasse arborée clôturée avec salon de jardin et 2 transats . Maison très
+                    bien équipée.
+                </p>
+                <p>Vous trouverez divers équipements comme: lave vaisselle, lave linge, TV, aspirateur, micro-ondes, combiné
+                    frigo/congélateur, vrai four, grille pain, bouilloire, cafetière...
+                </p>
+                <p><strong>MENAGE INCLUS</strong> dans le prix du séjour - Place de parking attitré dans la résidence </p>
+                <p>A 10mn à pied, au bord de la Mer Méditerrannée, vous seront proposés de nombreuses animations comme le Surf,
+                    la Voile, et autres activités nautiques. Résidence 'Ombre et Lumière'
+                </p>
+                <p><strong>Entièrement rénovée en mars 2016</strong></p>
+                <p>Location du vendredi au vendredi (juillet et août)</p>
+                <p><strong>Possibilite de location de linge sous forme de pack famille</strong>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <!-- <span class="glyphicon glyphicon-certificate logo"></span> -->
+            </div>
+        </div>
+    </section>
+    <!-- Photos -->
+    <section id="photos" class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#photoCarousel" data-slide-to="1"></li>
+                        <li data-target="#photoCarousel" data-slide-to="3"></li>
+                        <li data-target="#photoCarousel" data-slide-to="4"></li>
+                        <li data-target="#photoCarousel" data-slide-to="5"></li>
+                        <li data-target="#photoCarousel" data-slide-to="6"></li>
+                        <li data-target="#photoCarousel" data-slide-to="6"></li>
+                        <li data-target="#photoCarousel" data-slide-to="7"></li>
+                        <li data-target="#photoCarousel" data-slide-to="8"></li>
+                        <li data-target="#photoCarousel" data-slide-to="9"></li>
+                        <li data-target="#photoCarousel" data-slide-to="10"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img\i01.jpg" alt="Photo 01">
+                        </div>
+                        <div class="item">
+                            <img src="img\i02.jpg" alt="Photo 02">
+                        </div>
+                        <div class="item">
+                            <img src="img\i03.jpg" alt="Photo 03">
+                        </div>
+                        <div class="item">
+                            <img src="img\i04.jpg" alt="Photo 04">
+                        </div>
+                        <div class="item">
+                            <img src="img\i05.jpg" alt="Photo 05">
+                        </div>
+                        <div class="item">
+                            <img src="img\i06.jpg" alt="Photo 06">
+                        </div>
+                        <div class="item">
+                            <img src="img\i07.jpg" alt="Photo 07">
+                        </div>
+                        <div class="item">
+                            <img src="img\i08.jpg" alt="Photo 08">
+                        </div>
+                        <div class="item">
+                            <img src="img\i09.jpg" alt="Photo 09">
+                        </div>
+                        <div class="item">
+                            <img src="img\i10.jpg" alt="Photo 10">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </section>
+    <!-- Assets -->
+    <section id="assets" class="container-fluid text-center">
+        <h2>Aménagements de ce bien</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-bed logo-mini"></span>
+                <h4>Couchage</h4>
+                <p><strong>Six</strong> personnes, <strong>deux</strong> chambres, <strong>trois</strong> lits double</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-home logo-mini"></span>
+                <h4>Annexes</h4>
+                <p><strong>Terrasse</strong> avec parasol et transats. <strong>Parking</strong> privé</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo-mini"></span>
+                <h4>Distances</h4>
+                <p><strong>Proche</strong> de la plage, des commerces et des grandes villes</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-object-align-bottom logo-mini"></span>
+                <h4>Cuisine</h4>
+                <p>Four, micro-onde, frigo, petit éléctro</p>
+            </div>
+            <div class="col-sm-4"><span class="glyphicon glyphicon-film logo-mini"></span>
+                <h4>Séjour</h4>
+                <p>Télévision, <strong>satellite</strong>.</p>
+            </div>
+            <div class="col-sm-4"><span class="glyphicon glyphicon-euro logo-mini"></span>
+                <h4>Prix</h4>
+                <p>A partir de <strong>342€</strong>.</p>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+        </div>
+    </section>
+    <!-- Contacts -->
+    <section id="reservation" class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-2">
+                <h2 class="text-center">Réservation</h2>
+                <br>
+                <p><span class="glyphicon glyphicon-phone"></span> +33 (0)4 67 094 834</p>
+                <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:portiragnesplage@daureimmo.com"> Envoyer un mail</a></p>
+                <!-- <p>
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="http://www.daureimmo.com/fr/annonce/location-saisonniere-maison-portiragnes-plage-p-r7-34306853.html"> Annonce de location</a>
+                </p> -->
+            </div>
+            <div class="col-sm-8">
+                <!-- Add Google Maps -->
+                <div id="googleMap" style="height:400px;width:100%;"></div>
+                <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCNe6o0VLhcdC405WClSgq9fDRM8JDTA2k&callback=myMap"></script>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
