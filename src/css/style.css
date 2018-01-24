@@ -1,34 +1,49 @@
-.jumbotron{   
-    background-color: #f4511e; /* Orange */
-    color: #ffffff;
+:root {
+    --foregroundColor: #224B8B;
+    --mainBackgroundColor: #ffffff;
+    --altBackgroundColor: #7DBBC5;
+    --hColour: #303030;
 }
+
+.jumbotron {
+    background-color: var(--foregroundColor);
+    color: var(--mainBackgroundColor);
+}
+
 .container-fluid {
     padding: 60px 50px;
 }
+
 .logo {
-    color: #f4511e;
-    font-size: 200px; 
-    vertical-align: middle;   
+    color: var(--foregroundColor);
+    font-size: 200px;
+    vertical-align: middle;
 }
+
 .logo-mini {
-    color: #f4511e;
-    vertical-align: middle;   
+    color: var(--foregroundColor);
+    vertical-align: middle;
 }
+
 .bg-grey {
-    background-color: #f6f6f6;
+    background-color: var(--altBackgroundColor);
 }
+
+
 /*Carousel style*/
-.carousel-control.right, .carousel-control.left {
+
+.carousel-control.right,
+.carousel-control.left {
     background-image: none;
-    color: #f4511e;
+    color: var(--foregroundColor);
 }
 
 .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: var(--foregroundColor);
 }
 
 .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: var(--foregroundColor);
 }
 
 .item h4 {
@@ -42,10 +57,13 @@
 .item span {
     font-style: normal;
 }
+
+
 /* NAV bar */
+
 .navbar {
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: var(--foregroundColor);
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -54,24 +72,29 @@
     border-radius: 0;
 }
 
-.navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+.navbar li a,
+.navbar .navbar-brand {
+    color: var(--mainBackgroundColor) !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: var(--foregroundColor) !important;
+    background-color: var(--mainBackgroundColor) !important;
 }
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: var(--mainBackgroundColor) !important;
 }
+
+
 /* Extra styles */
+
 h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: var(--hColour);
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -79,12 +102,18 @@ h2 {
 h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: var(--hColour);
     font-weight: 400;
     margin-bottom: 30px;
 }
+
+
 /* Slide animation */
-.slideanim {visibility:hidden;}
+
+.slideanim {
+    visibility: hidden;
+}
+
 .slide {
     /* The name of the animation */
     animation-name: slide;
@@ -96,7 +125,9 @@ h4 {
     visibility: visible;
 }
 
+
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -107,6 +138,7 @@ h4 {
         transform: translateY(0%);
     }
 }
+
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
@@ -124,8 +156,9 @@ h4 {
         margin: 25px 0;
     }
 }
+
 @media screen and (max-width: 480px) {
-  .logo {
-      font-size: 150px;
-  }
+    .logo {
+        font-size: 150px;
+    }
 }
