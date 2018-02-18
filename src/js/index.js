@@ -22,7 +22,21 @@ $(document).ready(function () {
             });
         } // End if
     });
+    //Send message on click
+    $("#btnBookWeek").click(function () {
+        console.log("Sending mail...");
+        var val = "sendMail";
+        var url = "php/actions.php";
+        var data = {
+            'action': val
+        };
+        console.debug("Posting action: " + val)
+        $.post(url, data, function (response) {
+            console.log("Mail sent!");
+        });
+    });
 })
+
 
 function myMap() {
     var myCenter = new google.maps.LatLng(43.282859, 3.358208);
