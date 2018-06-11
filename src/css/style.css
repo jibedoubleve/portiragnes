@@ -161,3 +161,8 @@ h4 {
         font-size: 150px;
     }
 }
+
+/* Miscelaneous styles */
+.table th {
+    text-align: center
+}
