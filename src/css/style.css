@@ -5,6 +5,10 @@
     --hColour: #303030;
 }
 
+.btn {
+    background-color: var(--foregroundColor)
+}
+
 .jumbotron {
     background-color: var(--foregroundColor);
     color: var(--mainBackgroundColor);
@@ -28,7 +32,6 @@
 .bg-grey {
     background-color: var(--altBackgroundColor);
 }
-
 
 /*Carousel style*/
 
@@ -57,7 +60,6 @@
 .item span {
     font-style: normal;
 }
-
 
 /* NAV bar */
 
@@ -88,7 +90,6 @@
     color: var(--mainBackgroundColor) !important;
 }
 
-
 /* Extra styles */
 
 h2 {
@@ -107,7 +108,6 @@ h4 {
     margin-bottom: 30px;
 }
 
-
 /* Slide animation */
 
 .slideanim {
@@ -124,7 +124,6 @@ h4 {
     /* Make the element visible */
     visibility: visible;
 }
-
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 
@@ -161,4 +160,9 @@ h4 {
     .logo {
         font-size: 150px;
     }
+}
+
+/* Miscelaneous styles */
+.table th {
+    text-align: center
 }

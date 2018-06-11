@@ -19,24 +19,35 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">Portiragnes Plage</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#description">DESCRIPTION</a></li>
-                    <li><a href="#photos">PHOTOS</a></li>
-                    <li><a href="#assets">AMENAGEMENTS</a></li>
-                    <li><a href="#reservation">RESERVATION</a></li>
+                    <li>
+                        <a href="#description">DESCRIPTION</a>
+                    </li>
+                    <li>
+                        <a href="#photos">PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href="#assets">AMENAGEMENTS</a>
+                    </li>
+                    <li><a href="#prices">PRIX</a></li>
+                    <li>
+                        <a href="#reservation">RESERVATION</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="jumbotron text-center">
-        <h1>RESIDENCE OMBRE ET LUMIERE</h1>
+        <h1>RESIDENCE OMBRE ET LUMIERE
+            <?php date('Y-m-d') ?>
+        </h1>
         <p>6 couchages</p>
         <!-- <p>Maison, 33 m²</p> -->
         <!-- <p>Portiragnes plage</p> -->
@@ -48,25 +59,30 @@
             <div class="col-sm-8">
                 <h2>Description</h2>
                 <p>Situé dans une petite résidence sécurisée, une jolie villa vous attend. Elle comprend au rez-de-chaussée
-                    un séjour avec une nouvelle cuisine <strong>full</strong> équipée, une salle d'eau, wc. A l'étage vous
-                    avez 2 chambres avec un lit double dans chacune.</p>
+                    un séjour avec une nouvelle cuisine
+                    <strong>full</strong> équipée, une salle d'eau, wc. A l'étage vous avez 2 chambres avec un lit double dans chacune.</p>
                 <p>Le tout agrémenté d'une belle terrasse arborée clôturée avec salon de jardin et 2 transats . Maison très
                     bien équipée.
                 </p>
                 <p>Vous trouverez divers équipements comme: lave vaisselle, lave linge, TV, aspirateur, micro-ondes, combiné
                     frigo/congélateur, vrai four, grille pain, bouilloire, cafetière...
                 </p>
-                <p><strong>MENAGE INCLUS</strong> dans le prix du séjour - Place de parking attitré dans la résidence </p>
+                <p>
+                    <strong>MENAGE INCLUS</strong> dans le prix du séjour - Place de parking attitré dans la résidence </p>
                 <p>A 10mn à pied, au bord de la Mer Méditerrannée, vous seront proposés de nombreuses animations comme le Surf,
                     la Voile, et autres activités nautiques. Résidence 'Ombre et Lumière'
                 </p>
-                <p><strong>Entièrement rénovée en mars 2016</strong></p>
+                <p>
+                    <strong>Entièrement rénovée en mars 2016</strong>
+                </p>
                 <p>Location du vendredi au vendredi (juillet et août)</p>
-                <p><strong>Possibilite de location de linge sous forme de pack famille</strong>
+                <p>
+                    <strong>Possibilite de location de linge sous forme de pack famille</strong>
                 </p>
             </div>
-            <div class="col-sm-4">
-                <!-- <span class="glyphicon glyphicon-certificate logo"></span> -->
+            <div class="col-sm-4 text-center">
+                <!-- <a id="btnBookWeek" href="mailto:portiragnesplage@daureimmo.com?subject=Location du bien LROL40" class="btn btn-primary btn-lg">Je réserve</a> -->
+                <button id="btnBookWeek" class="btn btn-primary btn-lg">Je réserve</button>
             </div>
         </div>
     </section>
@@ -143,17 +159,23 @@
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-bed logo-mini"></span>
                 <h4>Couchage</h4>
-                <p><strong>Six</strong> personnes, <strong>deux</strong> chambres, <strong>trois</strong> lits double</p>
+                <p>
+                    <strong>Six</strong> personnes,
+                    <strong>deux</strong> chambres,
+                    <strong>trois</strong> lits double</p>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-home logo-mini"></span>
                 <h4>Annexes</h4>
-                <p><strong>Terrasse</strong> avec parasol et transats. <strong>Parking</strong> privé</p>
+                <p>
+                    <strong>Terrasse</strong> avec parasol et transats.
+                    <strong>Parking</strong> privé</p>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-globe logo-mini"></span>
                 <h4>Distances</h4>
-                <p><strong>Proche</strong> de la plage, des commerces et des grandes villes</p>
+                <p>
+                    <strong>Proche</strong> de la plage, des commerces et des grandes villes</p>
             </div>
         </div>
         <div class="row">
@@ -162,26 +184,227 @@
                 <h4>Cuisine</h4>
                 <p>Four, micro-onde, frigo, petit éléctro</p>
             </div>
-            <div class="col-sm-4"><span class="glyphicon glyphicon-film logo-mini"></span>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-film logo-mini"></span>
                 <h4>Séjour</h4>
-                <p>Télévision, <strong>satellite</strong>.</p>
+                <p>Télévision,
+                    <strong>satellite</strong>.</p>
             </div>
-            <div class="col-sm-4"><span class="glyphicon glyphicon-euro logo-mini"></span>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-euro logo-mini"></span>
                 <h4>Prix</h4>
-                <p>A partir de <strong>342€</strong>.</p>
+                <p>A partir de
+                    <strong>342€</strong>.</p>
             </div>
         </div>
         <div class="col-sm-4"></div>
         </div>
     </section>
+    <!-- Prices -->
+    <section id="prices" class="container-fluid bg-grey text-center">
+        <h2>Semaine de location (de vendredi à vendredi) </h2>
+        <table class="table">
+            <tr>
+                <th>De</th>
+                <th>à</th>
+                <th>Saison</th>
+                <th>Prix</th>
+            </tr>
+            <tr class="success">
+                <td>01/06/2018</td>
+                <td>08/06/2018</td>
+                <td>Basse saison </td>
+                <td> 402.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>08/06/2018</td>
+                <td>15/06/2018</td>
+                <td>Basse saison </td>
+                <td> 402.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>15/06/2018</td>
+                <td>22/06/2018</td>
+                <td>Basse saison </td>
+                <td> 402.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>22/06/2018</td>
+                <td>29/06/2018</td>
+                <td>Basse saison </td>
+                <td> 402.00€ </td>
+            </tr>
+            <tr class="warning">
+                <td>29/06/2018</td>
+                <td>06/07/2018</td>
+                <td>Intersaison </td>
+                <td> 592.00€ </td>
+            </tr>
+            <tr class="danger">
+                <td>06/07/2018</td>
+                <td>13/07/2018</td>
+                <td>Haute saison </td>
+                <td> 674.00€ </td>
+            </tr>
+            <tr class="danger">
+                <td>13/07/2018</td>
+                <td>20/07/2018</td>
+                <td>Haute saison </td>
+                <td> 674.00€ </td>
+            </tr>
+            <tr class="danger">
+                <td>20/07/2018</td>
+                <td>27/07/2018</td>
+                <td>Très haute saison </td>
+                <td> 704.00€ </td>
+            </tr>
+            <tr class="danger">
+                <td>27/07/2018</td>
+                <td>03/08/2018</td>
+                <td>Très haute saison </td>
+                <td> 704.00€ </td>
+            </tr>
+            <tr class="danger">
+                <td>03/08/2018</td>
+                <td>10/08/2018</td>
+                <td>Très haute saison </td>
+                <td> 704.00€ </td>
+            </tr>
+            <tr class="danger">
+                <td>10/08/2018</td>
+                <td>17/08/2018</td>
+                <td>Très haute saison </td>
+                <td> 704.00€ </td>
+            </tr>
+            <tr class="danger">
+                <td>17/08/2018</td>
+                <td>24/08/2018</td>
+                <td>Très haute saison </td>
+                <td> 704.00€ </td>
+            </tr>
+            <tr class="warning">
+                <td>24/08/2018</td>
+                <td>31/08/2018</td>
+                <td>Intersaison </td>
+                <td> 592.00€ </td>
+            </tr>
+            <tr class="warning">
+                <td>31/08/2018</td>
+                <td>07/09/2018</td>
+                <td>Moyenne saison </td>
+                <td> 511.00€ </td>
+            </tr>
+            <tr class="warning">
+                <td>07/09/2018</td>
+                <td>14/09/2018</td>
+                <td>Moyenne saison </td>
+                <td> 511.00€ </td>
+            </tr>
+            <tr class="warning">
+                <td>14/09/2018</td>
+                <td>21/09/2018</td>
+                <td>Moyenne saison </td>
+                <td> 511.00€ </td>
+            </tr>
+            <tr class="warning">
+                <td>21/09/2018</td>
+                <td>28/09/2018</td>
+                <td>Moyenne saison </td>
+                <td> 511.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>28/09/2018</td>
+                <td>05/10/2018</td>
+                <td>Basse saison </td>
+                <td> 402.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>05/10/2018</td>
+                <td>12/10/2018</td>
+                <td>Basse saison </td>
+                <td> 402.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>12/10/2018</td>
+                <td>19/10/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>19/10/2018</td>
+                <td>26/10/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>26/10/2018</td>
+                <td>02/11/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>02/11/2018</td>
+                <td>09/11/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>09/11/2018</td>
+                <td>16/11/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>16/11/2018</td>
+                <td>23/11/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>23/11/2018</td>
+                <td>30/11/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>30/11/2018</td>
+                <td>07/12/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>07/12/2018</td>
+                <td>14/12/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>14/12/2018</td>
+                <td>21/12/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+            <tr class="success">
+                <td>21/12/2018</td>
+                <td>28/12/2018</td>
+                <td>Très basse saison </td>
+                <td> 348.00€ </td>
+            </tr>
+
+        </table>
+    </section>
     <!-- Contacts -->
-    <section id="reservation" class="container-fluid bg-grey">
+    <section id="reservation" class="container-fluid">
         <div class="row">
             <div class="col-sm-2">
                 <h2 class="text-center">Réservation</h2>
                 <br>
-                <p><span class="glyphicon glyphicon-phone"></span> +33 (0)4 67 094 834</p>
-                <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:portiragnesplage@daureimmo.com"> Envoyer un mail</a></p>
+                <p>
+                    <span class="glyphicon glyphicon-phone"></span> +33 (0)4 67 094 834</p>
+                <p>
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <a href="mailto:portiragnesplage@daureimmo.com?subject=Location du bien LROL40"> Envoyer un mail</a>
+                </p>
                 <!-- <p>
                     <span class="glyphicon glyphicon-link"></span>
                     <a href="http://www.daureimmo.com/fr/annonce/location-saisonniere-maison-portiragnes-plage-p-r7-34306853.html"> Annonce de location</a>
